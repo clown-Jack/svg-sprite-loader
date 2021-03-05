@@ -3,7 +3,8 @@ import App from './App.vue'
 import Antd from 'ant-design-vue'
 
 import 'ant-design-vue/dist/antd.css'
+import SvgIcon from "@/components/svgIcon";
 
-import './icons'
-
-createApp(App).use(Antd).mount('#app')
+const app = createApp(App)
+app.component('svg-icon',SvgIcon)
+app.use(Antd).mount('#app')

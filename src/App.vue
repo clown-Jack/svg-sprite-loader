@@ -1,14 +1,27 @@
 <template>
-  <div>111</div>
+  <div>
+    <iconList></iconList>
+  </div>
 </template>
 
 <script>
-
-export default {
-  name: 'App',
-}
+import { defineComponent } from 'vue';
+import iconList from "@/view/icon/index.vue";
+// console.log(iconList);
+export default defineComponent({
+  name: "App",
+  components: {
+    iconList
+  },
+  setup() {
+    return {}
+  }
+});
 </script>
 
 <style>
-
+*{
+  padding: 0;
+  margin: 0;
+}
 </style>
